@@ -39,7 +39,7 @@ rename _reg lnw_res
 
 
 *Create within firm average log-wage
-bys firm_cc1: egen avg_firm_lnw=mean(lnw) 
+bys firm_cc1: egen avg_firm_lnw=mean(lnw_res) 
 
 *K-means clustering (based on https://journals.sagepub.com/doi/pdf/10.1177/1536867X1201200213)
 foreach k of numlist 5 10 50 {
